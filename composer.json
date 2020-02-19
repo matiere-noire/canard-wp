@@ -1,0 +1,17 @@
+{
+  "name": "matiere-noire",
+  "description": "Plugin de base",
+  "type": "wordpress-plugin",
+  "authors": [
+    {
+      "name": "Matière Noire",
+      "email": "developer@matierenoire.io"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "MN\\": "src/"
+    }
+  }
+}
