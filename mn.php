@@ -9,7 +9,9 @@
 
 namespace MN;
 
-require plugin_dir_path( __FILE__ ) . '/vendor/autoload.php';
+if( file_exists( plugin_dir_path( __FILE__ ) . '/vendor/autoload.php' ) ){
+    require plugin_dir_path( __FILE__ ) . '/vendor/autoload.php';
+}
 
 $mn = new MN();
 $mn->initialize( __FILE__ );
