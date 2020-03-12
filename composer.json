@@ -1,7 +1,8 @@
 {
-  "name": "matiere-noire",
-  "description": "Plugin de base",
+  "name": "matiere-noire/canard-wp",
+  "description": "Plugin permettant de faire briller Wordpress.",
   "type": "wordpress-plugin",
+  "license": "MIT",
   "authors": [
     {
       "name": "Matière Noire",

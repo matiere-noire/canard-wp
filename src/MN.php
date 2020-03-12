@@ -17,9 +17,21 @@ class MN{
         $this->url      = plugin_dir_url($file);
         $this->slug     = dirname($this->basename);
 
-        // Remove Emojis
-        $this-> remove_emojis();
+        // Remove version of Wordpress
+        $this->remove_version();
 
+        // Remove Emojis
+        $this->remove_emojis();
+
+    }
+
+    private function remove_version(){
+        remove_action('wp_head', 'wp_generator');
+
+        // Remove from RSS feed
+        add_filter('the_generator', function(){
+            return '';
+        });
     }
 
     private function remove_emojis(){
