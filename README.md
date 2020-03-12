@@ -1,8 +1,11 @@
-# Monsieur Propre
+# Canard WP
 
 Supprimer les ressources inutiles chargées par WordPress.
 
 Actuellement l'extension résout :
 
-- la désactivation des commentaires
 - la suppression du support des emojis
+
+## Plugins pouvant être ajoutés conjointement
+
+Suppression des commentaires via [disable-comments](https://wordpress.org/plugins/disable-comments/)
